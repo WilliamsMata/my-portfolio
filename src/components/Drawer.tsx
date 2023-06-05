@@ -16,7 +16,7 @@ export const Drawer: FC<Props> = ({ open, onClose, children }) => {
       />
 
       <aside
-        className={`fixed top-0 z-50 h-full w-60 bg-slate-950 shadow-2xl shadow-black transition-all ${
+        className={`fixed top-0 z-50 h-full w-60 bg-secondary shadow-2xl shadow-black transition-all ${
           open ? "-right-0" : "-right-60"
         }`}
       >
