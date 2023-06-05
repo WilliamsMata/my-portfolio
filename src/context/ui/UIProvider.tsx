@@ -14,7 +14,6 @@ export const UIProvider = ({ children }: PropsWithChildren) => {
 
   const toggleSidebar = () => {
     dispatch({ type: "[UI] - ToggleSidebar" });
-    console.log(state.isSidebarOpen);
   };
 
   return (
