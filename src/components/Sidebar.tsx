@@ -1,16 +1,34 @@
-import React, { useContext } from "react";
-import { Drawer } from "./";
+import { useContext } from "react";
+import { Button, Sheet, SheetContent, SocialIcons } from "./ui";
 import { UIContext } from "~/context/ui";
-import { SocialIcons } from "./ui";
 
 export const Sidebar = () => {
-  const { isSidebarOpen, toggleSidebar } = useContext(UIContext);
+  const { isSidebarOpen, setSidebarOpen } = useContext(UIContext);
 
   return (
-    <Drawer open={isSidebarOpen} onClose={toggleSidebar}>
-      <div className="flex h-full flex-col items-center justify-end py-4">
-        <SocialIcons />
-      </div>
-    </Drawer>
+    <Sheet open={isSidebarOpen} onOpenChange={setSidebarOpen}>
+      <SheetContent position="right" className="w-64">
+        <div className="mt-2 flex h-full flex-col items-center justify-between pt-12">
+          <div className="flex w-full flex-col gap-2">
+            <Button size="lg" className="w-full text-xl" variant="ghost">
+              About
+            </Button>
+            <Button size="lg" className="w-full text-xl" variant="ghost">
+              Skills
+            </Button>
+            <Button size="lg" className="w-full text-xl" variant="ghost">
+              Projects
+            </Button>
+            <Button size="lg" className="w-full text-xl" variant="ghost">
+              Contact Me
+            </Button>
+          </div>
+
+          <div className="">
+            <SocialIcons />
+          </div>
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 };

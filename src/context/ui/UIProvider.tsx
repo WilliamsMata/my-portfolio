@@ -16,12 +16,17 @@ export const UIProvider = ({ children }: PropsWithChildren) => {
     dispatch({ type: "[UI] - ToggleSidebar" });
   };
 
+  const setSidebarOpen = (newValue: boolean) => {
+    dispatch({ type: "[UI] - SetSidebarOpen", payload: newValue });
+  };
+
   return (
     <UIContext.Provider
       value={{
         ...state,
 
         toggleSidebar,
+        setSidebarOpen,
       }}
     >
       {children}

@@ -12,6 +12,21 @@ export const Navbar: FC = () => {
           <span className="text-4xl">WM</span>
         </div>
 
+        <div className="ml-16 hidden items-center justify-center gap-2 md:flex">
+          <Button size="sm" className="text-md" variant="ghost">
+            About
+          </Button>
+          <Button size="sm" className="text-md" variant="ghost">
+            Skills
+          </Button>
+          <Button size="sm" className="text-md" variant="ghost">
+            Projects
+          </Button>
+          <Button size="sm" className="text-md" variant="ghost">
+            Contact Me
+          </Button>
+        </div>
+
         <div>
           <SocialIcons className="hidden md:flex" />
 
