@@ -7,16 +7,21 @@ interface Props extends PropsWithChildren {
 
 export const Drawer: FC<Props> = ({ open, onClose, children }) => {
   return (
-    <div className="fixed top-0 z-50 flex h-full min-w-full">
+    <>
       <div
-        className={`grow ${
-          open ? "backdrop-blur-sm backdrop-brightness-75" : ""
+        className={`fixed top-0 h-full w-full grow backdrop-blur-sm backdrop-brightness-75 transition ${
+          open ? "visible opacity-100" : "invisible opacity-0"
         }`}
-        onClick={() => (open ? onClose() : null)}
+        onClick={onClose}
       />
-      <aside className="w-60 bg-red-400 shadow-2xl shadow-black">
+
+      <aside
+        className={`fixed top-0 z-50 h-full w-60 bg-slate-950 shadow-2xl shadow-black transition-all ${
+          open ? "-right-0" : "-right-60"
+        }`}
+      >
         {children}
       </aside>
-    </div>
+    </>
   );
 };
