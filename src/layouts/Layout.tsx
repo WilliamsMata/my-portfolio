@@ -18,7 +18,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
 
       <Sidebar />
 
-      <section className="py-12">{children}</section>
+      <div className="pt-14">{children}</div>
     </>
   );
 };

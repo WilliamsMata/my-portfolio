@@ -10,23 +10,19 @@ export const Sidebar = () => {
       <SheetContent position="right" className="w-64">
         <div className="mt-2 flex h-full flex-col items-center justify-between pt-12">
           <div className="flex w-full flex-col gap-2">
-            <Button size="lg" className="w-full text-xl" variant="ghost">
-              About
-            </Button>
-            <Button size="lg" className="w-full text-xl" variant="ghost">
-              Skills
-            </Button>
-            <Button size="lg" className="w-full text-xl" variant="ghost">
-              Projects
-            </Button>
-            <Button size="lg" className="w-full text-xl" variant="ghost">
-              Contact Me
-            </Button>
+            {["About", "Skills", "Projects", "Contact Me"].map((opt) => (
+              <Button
+                size="lg"
+                className="w-full text-xl"
+                variant="ghost"
+                key={opt}
+              >
+                {opt}
+              </Button>
+            ))}
           </div>
 
-          <div className="">
-            <SocialIcons />
-          </div>
+          <SocialIcons />
         </div>
       </SheetContent>
     </Sheet>

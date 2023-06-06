@@ -6,25 +6,18 @@ export const Navbar: FC = () => {
   const { toggleSidebar } = useContext(UIContext);
 
   return (
-    <div className="fixed min-w-full">
+    <div className="fixed min-w-full bg-background">
       <nav className="container flex items-center justify-between py-2">
         <div>
           <span className="text-4xl">WM</span>
         </div>
 
-        <div className="ml-16 hidden items-center justify-center gap-2 md:flex">
-          <Button size="sm" className="text-md" variant="ghost">
-            About
-          </Button>
-          <Button size="sm" className="text-md" variant="ghost">
-            Skills
-          </Button>
-          <Button size="sm" className="text-md" variant="ghost">
-            Projects
-          </Button>
-          <Button size="sm" className="text-md" variant="ghost">
-            Contact Me
-          </Button>
+        <div className="ml-28 hidden items-center justify-center gap-2 md:flex">
+          {["About", "Skills", "Projects", "Contact Me"].map((opt) => (
+            <Button size="sm" className="text-md" variant="ghost" key={opt}>
+              {opt}
+            </Button>
+          ))}
         </div>
 
         <div>
