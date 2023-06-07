@@ -24,6 +24,10 @@ const mySocialsNetwork: SocialNetwork[] = [
     title: "telegram",
     url: "https://t.me/williams_rm",
   },
+  {
+    title: "linkedin",
+    url: "https://www.linkedin.com/in/williams-mata-rojas-b39a56245/",
+  },
 ];
 
 interface Props {

@@ -12,7 +12,7 @@ export const Navbar: FC = () => {
           <span className="text-4xl">WM</span>
         </div>
 
-        <div className="ml-28 hidden items-center justify-center gap-2 md:flex">
+        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-28">
           {["About", "Skills", "Projects", "Contact Me"].map((opt) => (
             <Button size="sm" className="text-md" variant="ghost" key={opt}>
               {opt}
