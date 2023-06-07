@@ -4,6 +4,8 @@ import { BoxArrowUp } from "~/components/icons";
 import { Button } from "~/components/ui";
 import { Layout } from "~/layouts";
 
+import intjImage from "../../public/images/intj.png";
+
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -38,11 +40,9 @@ const Home: NextPage = () => {
         </div>
 
         <Image
-          src="/images/intj.png"
+          src={intjImage}
           alt="intj-person"
-          width={220}
-          height={220}
-          className="absolute bottom-4 right-8 -z-10 hidden sm:block"
+          className="absolute bottom-4 right-8 -z-10 hidden w-52 sm:block"
         />
       </section>
     </Layout>
