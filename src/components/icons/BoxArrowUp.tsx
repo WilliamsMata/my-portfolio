@@ -1,8 +1,9 @@
-interface Props {
-  className?: string;
-}
+import type { FC, SVGProps } from "react";
 
-export const BoxArrowUp: React.FC<Props> = ({ className }) => {
+export const BoxArrowUp: FC<SVGProps<SVGSVGElement>> = ({
+  className,
+  ...props
+}) => {
   return (
     <svg
       width="800px"
@@ -10,7 +11,8 @@ export const BoxArrowUp: React.FC<Props> = ({ className }) => {
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"
-      className={`${className ? className : ""} bi bi-box-arrow-up-right`}
+      className={`${className || ""} bi bi-box-arrow-up-right`}
+      {...props}
     >
       <path
         fillRule="evenodd"

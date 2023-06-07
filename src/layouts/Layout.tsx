@@ -18,7 +18,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
 
       <Sidebar />
 
-      <div className="pt-14">{children}</div>
+      <div className="pt-16">{children}</div>
     </>
   );
 };

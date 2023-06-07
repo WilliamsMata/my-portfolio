@@ -1,32 +1,44 @@
 import { type FC } from "react";
-import Image from "next/image";
 import { cn } from "~/lib/utils";
+import {
+  TelegramIcon,
+  GithubIcon,
+  InstagramIcon,
+  TwitterIcon,
+  LinkedinIcon,
+} from "../icons";
 
-interface SocialNetwork {
+interface SocialMedia {
   title: string;
   url: string;
+  icon: JSX.Element;
 }
 
-const mySocialsNetwork: SocialNetwork[] = [
+const mySocialsMedia: SocialMedia[] = [
   {
     title: "github",
     url: "https://github.com/WilliamsMata",
+    icon: <GithubIcon className="h-8 w-8" />,
   },
   {
     title: "instagram",
     url: "https://www.instagram.com/williams_rm/",
+    icon: <InstagramIcon className="h-8 w-8" />,
   },
   {
     title: "twitter",
     url: "https://twitter.com/williamsmata99",
+    icon: <TwitterIcon className="h-8 w-8" />,
   },
   {
     title: "telegram",
     url: "https://t.me/williams_rm",
+    icon: <TelegramIcon className="h-8 w-8" />,
   },
   {
     title: "linkedin",
     url: "https://www.linkedin.com/in/williams-mata-rojas-b39a56245/",
+    icon: <LinkedinIcon className="h-8 w-8" />,
   },
 ];
 
@@ -37,19 +49,14 @@ interface Props {
 export const SocialIcons: FC<Props> = ({ className }) => {
   return (
     <div className={cn("flex gap-4", className)}>
-      {mySocialsNetwork.map((social) => (
+      {mySocialsMedia.map((social) => (
         <a
           key={social.url}
           href={social.url}
           target="_blank"
           className="transition-transform hover:-translate-y-1"
         >
-          <Image
-            src={`/social/${social.title}.svg`}
-            alt={`${social.title} icon`}
-            width={30}
-            height={30}
-          />
+          {social.icon}
         </a>
       ))}
     </div>
