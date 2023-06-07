@@ -1,19 +1,19 @@
 import { useContext, type FC } from "react";
 import { Button, SocialIcons } from "./ui";
 import { UIContext } from "~/context/ui";
-import { WM } from "./icons";
+import { WMIcon } from "./icons";
 
 export const Navbar: FC = () => {
   const { toggleSidebar } = useContext(UIContext);
 
   return (
     <div className="fixed min-w-full bg-background">
-      <nav className="container flex items-center justify-between py-2">
+      <nav className="container flex items-center justify-between py-3">
         <div>
-          <WM className="h-12 w-12" />
+          <WMIcon className="h-auto w-12" />
         </div>
 
-        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-28">
+        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-52">
           {["About", "Skills", "Projects", "Contact Me"].map((opt) => (
             <Button size="sm" className="text-md" variant="ghost" key={opt}>
               {opt}

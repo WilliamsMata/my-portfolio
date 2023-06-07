@@ -1,6 +1,6 @@
-import { type SVGProps } from "react";
+import type { FC, SVGProps } from "react";
 
-export const WM: React.FC<SVGProps<SVGSVGElement>> = (props) => {
+export const WMIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
       width="636"
