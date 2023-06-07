@@ -11,7 +11,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
           name="description"
           content="Welcome to the web development portfolio of Williams Mata. I am a skilled frontend and backend developer with experience creating modern, dynamic websites. Explore my portfolio to see some of the projects I have worked on and get in touch if you are interested in collaborating on a project together."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/wm.svg" />
       </Head>
 
       <Navbar />

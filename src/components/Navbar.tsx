@@ -1,6 +1,7 @@
 import { useContext, type FC } from "react";
 import { Button, SocialIcons } from "./ui";
 import { UIContext } from "~/context/ui";
+import { WM } from "./icons";
 
 export const Navbar: FC = () => {
   const { toggleSidebar } = useContext(UIContext);
@@ -9,7 +10,7 @@ export const Navbar: FC = () => {
     <div className="fixed min-w-full bg-background">
       <nav className="container flex items-center justify-between py-2">
         <div>
-          <span className="text-4xl">WM</span>
+          <WM className="h-12 w-12" />
         </div>
 
         <div className="hidden items-center justify-center gap-2 md:flex lg:ml-28">
