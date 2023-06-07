@@ -1,6 +1,10 @@
 import type { FC, SVGProps } from "react";
 
-export const WMIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+interface Props extends SVGProps<SVGSVGElement> {
+  isDark?: boolean;
+}
+
+export const WMIcon: FC<Props> = ({ isDark, ...props }) => {
   return (
     <svg
       width="636"
@@ -18,7 +22,7 @@ export const WMIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       />
       <path
         d="M20 74L112.875 374.766C124.226 411.524 175.387 413.82 189.984 378.226L277.586 164.617C291.389 130.959 338.932 130.613 353.223 164.067L445.763 380.691C460.786 415.859 511.52 413.128 522.681 376.55L615 74"
-        stroke="#FAFAFA"
+        stroke={isDark ? "#FAFAFA" : "#151515"}
         strokeOpacity="0.980392"
         strokeWidth="39"
         strokeLinecap="round"

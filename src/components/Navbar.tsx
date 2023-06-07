@@ -4,13 +4,14 @@ import { UIContext } from "~/context/ui";
 import { WMIcon } from "./icons";
 
 export const Navbar: FC = () => {
-  const { toggleSidebar } = useContext(UIContext);
+  const { isDarkMode, toggleSidebar } = useContext(UIContext);
+  console.log({ isDarkMode });
 
   return (
     <div className="fixed min-w-full bg-background">
       <nav className="container flex items-center justify-between py-3">
         <div>
-          <WMIcon className="h-auto w-12" />
+          <WMIcon className="h-auto w-12" isDark={isDarkMode} />
         </div>
 
         <div className="hidden items-center justify-center gap-2 md:flex lg:ml-52">

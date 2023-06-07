@@ -5,8 +5,12 @@ import { Button } from "~/components/ui";
 import { Layout } from "~/layouts";
 
 import intjImage from "../../public/images/intj.png";
+import { useContext } from "react";
+import { UIContext } from "~/context/ui";
 
 const Home: NextPage = () => {
+  const { isDarkMode } = useContext(UIContext);
+
   return (
     <Layout>
       <section className="container relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
@@ -30,7 +34,8 @@ const Home: NextPage = () => {
               className="flex items-center tracking-wide sm:text-base"
               size="lg"
             >
-              Resume <BoxArrowUp className="mb-1 ml-1 h-4 w-4" />
+              Resume{" "}
+              <BoxArrowUp className="mb-1 ml-1 h-4 w-4" isDark={isDarkMode} />
             </Button>
 
             <a href="" className="tracking-wide underline underline-offset-4">
