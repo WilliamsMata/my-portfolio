@@ -5,15 +5,14 @@ import { Button } from "~/components/ui";
 import { Layout } from "~/layouts";
 
 import intjImage from "../../public/images/intj.png";
-import { useContext } from "react";
-import { UIContext } from "~/context/ui";
 
 const Home: NextPage = () => {
-  const { isDarkMode } = useContext(UIContext);
-
   return (
     <Layout>
-      <section className="container relative flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
+      <section
+        id="wm"
+        className="container relative flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-4 pb-2 sm:flex-row md:gap-8"
+      >
         <div className="aspect-square w-full rounded-3xl bg-blue-900 sm:hidden md:block md:w-6/12"></div>
 
         <div className="flex flex-col justify-center gap-4 text-center md:w-6/12 md:text-start">
@@ -49,7 +48,10 @@ const Home: NextPage = () => {
           className="absolute bottom-4 right-8 -z-10 hidden w-52 sm:block"
         />
       </section>
-      <section className="container relative flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
+      <section
+        id="skills"
+        className="container relative flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8"
+      >
         lala
       </section>
     </Layout>

@@ -7,6 +7,7 @@ type UseDarkModeProps = {
 type UseDarkModeReturn = {
   darkMode: boolean | undefined;
   switchMode: () => void;
+  setMode: (newMode: boolean) => void;
 };
 
 export const useDarkMode = (
@@ -43,8 +44,13 @@ export const useDarkMode = (
     setDarkMode((prevMode) => !prevMode);
   };
 
+  const setMode = (newMode: boolean) => {
+    setDarkMode(newMode);
+  };
+
   return {
     darkMode,
     switchMode,
+    setMode,
   };
 };

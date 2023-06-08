@@ -12,7 +12,7 @@ const UI_INITIAL_STATE: UIState = {
 
 export const UIProvider = ({ children }: PropsWithChildren) => {
   const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE);
-  const { darkMode = true, switchMode } = useDarkMode();
+  const { darkMode = true, switchMode, setMode } = useDarkMode();
 
   const toggleSidebar = () => {
     dispatch({ type: "[UI] - ToggleSidebar" });
@@ -35,6 +35,7 @@ export const UIProvider = ({ children }: PropsWithChildren) => {
         toggleSidebar,
         setSidebarOpen,
         toggleDarkMode,
+        setMode,
       }}
     >
       {children}

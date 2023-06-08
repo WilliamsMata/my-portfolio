@@ -1,41 +1,54 @@
 import { useContext, type FC } from "react";
-import { Button, SocialIcons } from "./ui";
+import { Button, SelectDarkMode, Separator, SocialIcons } from "./ui";
 import { UIContext } from "~/context/ui";
 import { WMIcon } from "./icons";
 
 export const Navbar: FC = () => {
-  const { toggleSidebar, toggleDarkMode } = useContext(UIContext);
+  const { toggleSidebar, setMode } = useContext(UIContext);
 
   return (
-    <div
-      className={`sticky top-0 z-10 min-w-full bg-background/75 backdrop-blur`}
-    >
+    <div className="sticky top-0 z-10 min-w-full border-b-[1px] border-border bg-background/75 backdrop-blur">
       <nav className="container flex items-center justify-between py-2">
-        <div>
+        <a href="#wm">
           <WMIcon className="h-auto w-16" />
-        </div>
+        </a>
 
-        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-52">
-          {["About", "Skills", "Projects", "Contact Me"].map((opt) => (
-            <Button size="sm" className="text-md" variant="ghost" key={opt}>
-              {opt}
+        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-64">
+          {["Skills", "Projects", "Contact Me"].map((opt) => (
+            <Button
+              size="sm"
+              className="text-md"
+              variant="ghost"
+              key={opt}
+              asChild
+            >
+              <a href={`#${opt.toLowerCase()}`}>{opt}</a>
             </Button>
           ))}
         </div>
 
-        <div>
-          <SocialIcons className="hidden md:flex" />
+        <div className="flex items-center space-x-2">
+          <SocialIcons className="mr-2 hidden md:flex" />
 
-          <button className="hidden md:flex" onClick={toggleDarkMode}>
-            toggle
-          </button>
+          <Separator orientation="vertical" className="hidden h-10 md:block" />
+
+          <SelectDarkMode
+            onModeChange={setMode}
+            className="w-10 p-2 md:hidden"
+          />
+
+          <SelectDarkMode
+            onModeChange={setMode}
+            className="hidden w-10 p-2 md:block"
+            align="end"
+          />
 
           <Button
             type="button"
             color="black"
             size="sm"
             variant="ghost"
-            className="md:hidden"
+            className="ml-0 md:hidden"
             onClick={toggleSidebar}
           >
             <span className="font-bold">Menu</span>
