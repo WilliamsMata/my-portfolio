@@ -1,18 +1,16 @@
 import type { FC, SVGProps } from "react";
 
-interface Props extends SVGProps<SVGSVGElement> {
-  isDark?: boolean;
-}
-
-export const BoxArrowUp: FC<Props> = ({ isDark, className, ...props }) => {
+export const BoxArrowUp: FC<SVGProps<SVGSVGElement>> = ({
+  className,
+  ...props
+}) => {
   return (
     <svg
       width="800px"
       height="800px"
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
-      fill={isDark ? "#000000" : "#ffffff"}
-      className={`${className || ""} bi bi-box-arrow-up-right`}
+      className={`${className || ""} bi bi-box-arrow-up-right fill-secondary`}
       {...props}
     >
       <path

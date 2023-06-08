@@ -34,8 +34,7 @@ const Home: NextPage = () => {
               className="flex items-center tracking-wide sm:text-base"
               size="lg"
             >
-              Resume{" "}
-              <BoxArrowUp className="mb-1 ml-1 h-4 w-4" isDark={isDarkMode} />
+              Resume <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
             </Button>
 
             <a href="" className="tracking-wide underline underline-offset-4">
