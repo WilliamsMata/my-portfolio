@@ -50,6 +50,9 @@ const Home: NextPage = () => {
           className="absolute bottom-4 right-8 -z-10 hidden w-52 sm:block"
         />
       </section>
+      <section className="container relative flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
+        lala
+      </section>
     </Layout>
   );
 };
