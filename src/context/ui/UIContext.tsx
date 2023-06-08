@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 interface ContextProps {
   isSidebarOpen: boolean;
-  isDarkMode: boolean;
+  isDarkMode: boolean | undefined;
 
   toggleSidebar: () => void;
   setSidebarOpen: (newValue: boolean) => void;

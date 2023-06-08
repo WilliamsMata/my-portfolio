@@ -7,13 +7,6 @@ type UIActionType =
   | {
       type: "[UI] - SetSidebarOpen";
       payload: boolean;
-    }
-  | {
-      type: "[UI] - ToggleDarkMode";
-    }
-  | {
-      type: "[UI] - SetDarkMode";
-      payload: boolean;
     };
 
 export const uiReducer = (state: UIState, action: UIActionType): UIState => {
@@ -28,12 +21,6 @@ export const uiReducer = (state: UIState, action: UIActionType): UIState => {
       return {
         ...state,
         isSidebarOpen: action.payload,
-      };
-
-    case "[UI] - SetDarkMode":
-      return {
-        ...state,
-        isDarkMode: action.payload,
       };
 
     default:

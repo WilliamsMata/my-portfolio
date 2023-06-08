@@ -4,19 +4,15 @@ import { useDarkMode } from "~/hooks";
 
 export interface UIState {
   isSidebarOpen: boolean;
-  isDarkMode: boolean;
 }
 
 const UI_INITIAL_STATE: UIState = {
   isSidebarOpen: false,
-  isDarkMode: false,
 };
 
 export const UIProvider = ({ children }: PropsWithChildren) => {
   const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE);
-  const { darkMode, switchMode } = useDarkMode({
-    defaultMode: UI_INITIAL_STATE.isDarkMode,
-  });
+  const { darkMode, switchMode } = useDarkMode({ defaultMode: true });
 
   const toggleSidebar = () => {
     dispatch({ type: "[UI] - ToggleSidebar" });
@@ -30,16 +26,11 @@ export const UIProvider = ({ children }: PropsWithChildren) => {
     switchMode();
   };
 
-  useEffect(() => {
-    if (darkMode) {
-      dispatch({ type: "[UI] - SetDarkMode", payload: darkMode });
-    }
-  }, [darkMode]);
-
   return (
     <UIContext.Provider
       value={{
         ...state,
+        isDarkMode: darkMode,
 
         toggleSidebar,
         setSidebarOpen,

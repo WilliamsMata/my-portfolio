@@ -4,8 +4,7 @@ import { UIContext } from "~/context/ui";
 import { WMIcon } from "./icons";
 
 export const Navbar: FC = () => {
-  const { isDarkMode, toggleSidebar } = useContext(UIContext);
-  console.log({ isDarkMode });
+  const { isDarkMode, toggleSidebar, toggleDarkMode } = useContext(UIContext);
 
   return (
     <div className="fixed min-w-full bg-background">
@@ -24,6 +23,10 @@ export const Navbar: FC = () => {
 
         <div>
           <SocialIcons className="hidden md:flex" />
+
+          <button className="hidden md:flex" onClick={toggleDarkMode}>
+            toggle
+          </button>
 
           <Button
             type="button"
