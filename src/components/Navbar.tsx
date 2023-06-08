@@ -7,10 +7,10 @@ export const Navbar: FC = () => {
   const { isDarkMode, toggleSidebar, toggleDarkMode } = useContext(UIContext);
 
   return (
-    <div className="fixed min-w-full bg-background">
+    <div className="fixed z-10 min-w-full bg-background">
       <nav className="container flex items-center justify-between py-3">
         <div>
-          <WMIcon className="h-auto w-12" isDark={isDarkMode} />
+          <WMIcon className="h-auto w-16" isDark={isDarkMode} />
         </div>
 
         <div className="hidden items-center justify-center gap-2 md:flex lg:ml-52">

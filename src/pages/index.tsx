@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <section className="container relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
+      <section className="container relative flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center gap-4 sm:flex-row md:gap-8">
         <div className="aspect-square w-full rounded-3xl bg-blue-900 sm:hidden md:block md:w-6/12"></div>
 
         <div className="flex flex-col justify-center gap-4 text-center md:w-6/12 md:text-start">

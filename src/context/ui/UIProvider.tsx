@@ -1,4 +1,4 @@
-import { type PropsWithChildren, useReducer, useEffect } from "react";
+import { type PropsWithChildren, useReducer } from "react";
 import { UIContext, uiReducer } from "./";
 import { useDarkMode } from "~/hooks";
 
@@ -12,7 +12,7 @@ const UI_INITIAL_STATE: UIState = {
 
 export const UIProvider = ({ children }: PropsWithChildren) => {
   const [state, dispatch] = useReducer(uiReducer, UI_INITIAL_STATE);
-  const { darkMode, switchMode } = useDarkMode({ defaultMode: true });
+  const { darkMode = true, switchMode } = useDarkMode();
 
   const toggleSidebar = () => {
     dispatch({ type: "[UI] - ToggleSidebar" });
