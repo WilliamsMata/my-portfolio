@@ -10,22 +10,15 @@ import {
 } from "./";
 import Image from "next/image";
 import { BoxArrowUp } from "../icons";
+import { type SkillData } from "~/data";
 
-interface Props extends PropsWithChildren {
-  title: string;
-  iconPath: string;
-  url: string;
-  description: string;
-  needInvertColor?: boolean;
-}
-
-export const SkillDialog: FC<Props> = ({
-  children,
+export const SkillDialog: FC<SkillData & PropsWithChildren> = ({
   title,
   iconPath,
   url,
   description,
   needInvertColor,
+  children,
 }) => {
   return (
     <Dialog>
