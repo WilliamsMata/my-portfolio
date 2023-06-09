@@ -56,7 +56,7 @@ export const Skills: FC<Props> = (props) => {
                       needInvertColor,
                     }) => (
                       <div
-                        className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-xl active:p-4 hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 md:active:p-6 lg:w-2/12"
+                        className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-xl active:scale-90 hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12"
                         key={iconPath}
                       >
                         <SkillDialog

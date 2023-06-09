@@ -41,7 +41,11 @@ export const SkillDialog: FC<SkillData & PropsWithChildren> = ({
             </DialogDescription>
           </DialogHeader>
 
-          <a href={url} target="_blank" className="flex items-center self-end">
+          <a
+            href={url}
+            target="_blank"
+            className="flex items-center self-end transition-transform active:scale-90 "
+          >
             <Button size="sm">
               See more <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
             </Button>
