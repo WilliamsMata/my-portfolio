@@ -6,14 +6,18 @@ import { WMIcon } from "./icons";
 export const Navbar: FC = () => {
   const { toggleSidebar, setMode } = useContext(UIContext);
 
+  const onNameClick = () => {
+    document.documentElement.scrollTo({ top: 0 });
+  };
+
   return (
     <div className="sticky top-0 z-10 min-w-full border-b-[1px] border-border bg-background/75 backdrop-blur">
       <nav className="container flex items-center justify-between py-2">
-        <a href="#wm">
+        <span onClick={onNameClick} className="cursor-pointer">
           <WMIcon className="h-auto w-16" />
-        </a>
+        </span>
 
-        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-64">
+        <div className="hidden items-center justify-center gap-2 md:flex lg:ml-56">
           {["Skills", "Projects", "Contact Me"].map((opt) => (
             <Button
               size="sm"
