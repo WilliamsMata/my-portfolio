@@ -31,7 +31,7 @@ export const SkillDialog: FC<SkillData & PropsWithChildren> = ({
               needInvertColor ? "dark:invert" : ""
             }`}
           >
-            <Image src={iconPath} alt="title" fill />
+            <Image src={iconPath} alt={title} fill />
           </div>
 
           <DialogHeader>

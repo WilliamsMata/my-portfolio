@@ -108,7 +108,7 @@ export const skills: Skill[] = [
           "Tailwind CSS is a popular utility-first CSS framework used to build modern and responsive user interfaces. It provides a set of pre-defined CSS classes that can be used to style HTML elements and create complex layouts without writing custom CSS. With Tailwind CSS, developers can quickly and easily create consistent and visually appealing designs for web applications. It also includes a responsive grid system and support for customizing themes and color palettes. ",
       },
       {
-        title: "MUI",
+        title: "Material UI",
         iconPath: "/icons/mui.svg",
         url: "https://mui.com/",
         description:
@@ -126,6 +126,13 @@ export const skills: Skill[] = [
         url: "https://www.docker.com/",
         description:
           "Docker is an open-source platform that allows developers to create, deploy, and run applications in isolated containers. It provides a lightweight and portable environment for running applications, which eliminates many of the compatibility issues that can arise when running applications on different systems. Docker containers can be easily moved between different environments, such as development, testing, and production, without requiring any changes to the application code. Docker also provides a powerful set of tools for managing and scaling containers, including Docker Compose and Kubernetes.",
+      },
+      {
+        title: "Figma",
+        iconPath: "/icons/figma.svg",
+        url: "https://www.figma.com/",
+        description:
+          "Figma is a cloud-based design and prototyping tool used for creating user interfaces, web designs, and mobile applications. It provides a collaborative platform that allows multiple designers to work on the same project in real-time, which makes it easier to collaborate and share feedback. Figma includes a variety of features such as vector networks, design libraries, and interactive components, which makes it easier to create and manage complex designs. It also allows developers to inspect designs, generate code snippets, and export assets for development.",
       },
       {
         title: "Firebase",
@@ -156,6 +163,13 @@ export const skills: Skill[] = [
           "Jest is a popular JavaScript testing framework used to test JavaScript code, particularly for React applications. It is developed by Facebook and provides a powerful set of features for testing code, including a test runner, assertion library, and mocking capabilities. Jest allows developers to write tests in a simple and intuitive way, using a combination of test suites, test cases, and assertions. It also provides tools for code coverage analysis, parallel testing, and snapshot testing.",
       },
       {
+        title: "JWT",
+        iconPath: "/icons/jwt.svg",
+        url: "https://jwt.io/",
+        description:
+          "JWT (JSON Web Token) is an open standard for securely transmitting information between parties as a JSON object. It is commonly used for authentication and authorization purposes in web applications. JWTs consist of three parts - a header, a payload, and a signature. The header and payload are Base64Url encoded JSON objects, while the signature is used to verify the authenticity of the token. JWTs are used to securely transmit information such as user details, permissions, and access tokens between a client and a server.",
+      },
+      {
         title: "MongoDB",
         iconPath: "/icons/mongo.svg",
         url: "https://www.mongodb.com/",
@@ -171,6 +185,13 @@ export const skills: Skill[] = [
         needInvertColor: true,
       },
       {
+        title: "NextAuth",
+        iconPath: "/icons/next-auth.png",
+        url: "https://next-auth.js.org/",
+        description:
+          "NextAuth.js is an open-source authentication library for Next.js applications. It provides a simple and flexible way to implement various authentication providers, such as Google, Facebook, and GitHub, as well as custom authentication strategies. NextAuth.js allows developers to easily add authentication to their Next.js applications without having to manage the complexities of authentication protocols and security concerns. It also provides a set of features such as session management, CSRF protection, and JWT signing.",
+      },
+      {
         title: "Prisma",
         iconPath: "/icons/prisma.svg",
         url: "https://www.prisma.io/",
@@ -184,6 +205,13 @@ export const skills: Skill[] = [
         url: "https://reactrouter.com/en/main",
         description:
           "React Router is a popular library used for routing in React applications. It provides a set of components and tools for managing the navigation and URL structure of a React application. React Router allows developers to define routes and navigate between them declaratively using JSX syntax. It also provides advanced features such as nested routes, routing with parameters, and programmatic navigation.",
+      },
+      {
+        title: "React Hook Form",
+        iconPath: "/icons/react-hook-form.svg",
+        url: "https://react-hook-form.com/",
+        description:
+          "React Hook Form is a lightweight and flexible library used for managing forms in React applications. It provides a simple and intuitive API for building forms using custom React hooks and supports various form inputs, such as text inputs, checkboxes, and radio buttons. React Hook Form is designed to be performant and efficient, with features like conditional validation and asynchronous form submission. It also integrates well with other popular libraries and frameworks, such as Zod for form validation and Material UI for styling. .",
       },
       {
         title: "Redux",
@@ -205,6 +233,13 @@ export const skills: Skill[] = [
         url: "https://trpc.io/",
         description:
           "tRPC is a modern TypeScript-based framework for building scalable and efficient backend APIs. It provides a lightweight and flexible approach to API development, with a focus on simplicity, performance, and developer experience. tRPC allows developers to define API endpoints using a simple and intuitive syntax, and provides automatic TypeScript typings and documentation. It also supports various transport protocols, including HTTP, WebSocket, and gRPC. tRPC includes a set of features such as request validation, response compression, and caching, which makes it easier to build robust and scalable APIs.",
+      },
+      {
+        title: "Zod",
+        iconPath: "/icons/zod.svg",
+        url: "https://zod.dev/",
+        description:
+          "Zod is a TypeScript-first schema validation library used for validating data objects in JavaScript and TypeScript applications. It provides a simple and intuitive API for defining data schemas and validating data objects against those schemas. Zod supports various data types, such as strings, numbers, arrays, and objects, as well as advanced features like union types, intersection types, and conditional types. It also provides a set of tools for data parsing, serialization, and transformation. Zod is designed to be lightweight and performant, with a focus on type safety and developer experience.",
       },
     ],
   },

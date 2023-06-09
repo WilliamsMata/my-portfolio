@@ -72,7 +72,7 @@ export const Skills: FC<Props> = (props) => {
                                 needInvertColor ? "dark:invert" : ""
                               }`}
                             >
-                              <Image src={iconPath} alt="title" fill />
+                              <Image src={iconPath} alt={title} fill />
                             </div>
                             <h3 className="mt-2 text-center text-lg font-semibold">
                               {title}
