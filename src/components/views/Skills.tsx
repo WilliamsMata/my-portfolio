@@ -126,7 +126,7 @@ export const Skills: FC<Props> = (props) => {
   return (
     <section {...props}>
       <div className="flex items-center justify-center">
-        <h2 className="bg-gradient-to-r from-red-600 to-yellow-600 bg-clip-text text-4xl font-semibold text-transparent">
+        <h2 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-4xl font-semibold text-transparent">
           My Skills
         </h2>
       </div>
@@ -155,7 +155,7 @@ export const Skills: FC<Props> = (props) => {
               <CardContent className="fadeIn flex flex-wrap items-center justify-center">
                 {languages.map(({ title, iconPath }) => (
                   <div
-                    className="w-6/12 p-2 sm:w-4/12 md:w-3/12 lg:w-2/12 "
+                    className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-2xl hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12 "
                     key={iconPath}
                   >
                     <div className="relative aspect-square w-full">
@@ -178,7 +178,7 @@ export const Skills: FC<Props> = (props) => {
               <CardContent className="fadeIn flex flex-wrap items-center justify-center">
                 {frameworks.map(({ title, iconPath }) => (
                   <div
-                    className="w-6/12 p-2 sm:w-4/12 md:w-3/12 lg:w-2/12 "
+                    className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-2xl hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12 "
                     key={iconPath}
                   >
                     <div
@@ -207,7 +207,7 @@ export const Skills: FC<Props> = (props) => {
               <CardContent className="fadeIn flex flex-wrap items-center justify-center">
                 {tools.map(({ title, iconPath }) => (
                   <div
-                    className="w-6/12 p-2 sm:w-4/12 md:w-3/12 lg:w-2/12 "
+                    className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-2xl hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12 "
                     key={iconPath}
                   >
                     <div
