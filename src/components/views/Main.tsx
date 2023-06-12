@@ -33,7 +33,11 @@ export const Main: FC<Props> = (props) => {
             Resume <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
           </Button>
 
-          <a href="" className="tracking-wide underline underline-offset-4">
+          <a
+            href="mailto:wm.dev.ts@gmail.com"
+            target="_blank"
+            className="tracking-wide underline underline-offset-4"
+          >
             Contact
           </a>
         </div>

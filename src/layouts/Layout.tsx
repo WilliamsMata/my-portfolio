@@ -1,6 +1,6 @@
 import { type PropsWithChildren, type FC, useState, useEffect } from "react";
 import Head from "next/head";
-import { Navbar, Sidebar } from "~/components";
+import { Footer, Navbar, Sidebar } from "~/components";
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   const [isSchemaDark, setIsSchemaDark] = useState<boolean>(true);
@@ -33,6 +33,8 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
       <Sidebar />
 
       <div>{children}</div>
+
+      <Footer />
     </>
   );
 };
