@@ -21,11 +21,11 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
           name="description"
           content="Welcome to the web development portfolio of Williams Mata. I am a skilled frontend and backend developer with experience creating modern, dynamic websites. Explore my portfolio to see some of the projects I have worked on and get in touch if you are interested in collaborating on a project together."
         />
-        {isSchemaDark ? (
-          <link rel="icon" href="/icons/wm-dark.svg" />
-        ) : (
-          <link rel="icon" href="/icons/wm-light.svg" />
-        )}
+
+        <link
+          rel="icon"
+          href={`/icons/wm-${isSchemaDark ? "dark" : "light"}.svg`}
+        />
       </Head>
 
       <Navbar />

@@ -47,41 +47,27 @@ export const Skills: FC<Props> = (props) => {
                   <CardTitle className="text-2xl">{title}</CardTitle>
                 </CardHeader>
                 <CardContent className="fadeIn flex flex-wrap items-center justify-center">
-                  {skillsData.map(
-                    ({
-                      title,
-                      iconPath,
-                      url,
-                      description,
-                      needInvertColor,
-                    }) => (
-                      <div
-                        className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-xl active:scale-90 hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12"
-                        key={iconPath}
-                      >
-                        <SkillDialog
-                          description={description}
-                          iconPath={iconPath}
-                          url={url}
-                          title={title}
-                          needInvertColor={needInvertColor}
-                        >
-                          <div>
-                            <div
-                              className={`relative aspect-square w-full ${
-                                needInvertColor ? "dark:invert" : ""
-                              }`}
-                            >
-                              <Image src={iconPath} alt={title} fill />
-                            </div>
-                            <h3 className="mt-2 text-center text-lg font-semibold">
-                              {title}
-                            </h3>
+                  {skillsData.map((data) => (
+                    <div
+                      className="w-6/12 cursor-pointer rounded-xl p-4 transition-all hover:p-2 hover:shadow-xl active:scale-90 hover:dark:bg-background/75 hover:dark:shadow-2xl hover:dark:shadow-purple-600 sm:w-4/12 md:w-3/12 md:p-6 md:hover:p-4 lg:w-2/12"
+                      key={data.iconPath}
+                    >
+                      <SkillDialog {...data}>
+                        <div>
+                          <div
+                            className={`relative aspect-square w-full ${
+                              data.needInvertColor ? "dark:invert" : ""
+                            }`}
+                          >
+                            <Image src={data.iconPath} alt={title} fill />
                           </div>
-                        </SkillDialog>
-                      </div>
-                    )
-                  )}
+                          <h3 className="mt-2 text-center text-lg font-semibold">
+                            {data.title}
+                          </h3>
+                        </div>
+                      </SkillDialog>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </TabsContent>
