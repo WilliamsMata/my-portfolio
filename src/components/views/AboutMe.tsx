@@ -57,9 +57,11 @@ export const AboutMe: FC<Props> = (props) => {
               project.
             </h5>
           </CardDescription>
+        </CardContent>
 
+        <CardContent>
           <CardTitle>
-            <h2 className="my-2 text-2xl">Contact Me:</h2>
+            <h2 className="text-2xl">Contact Me:</h2>
           </CardTitle>
           <CardDescription>
             You can send me a message I will gladly answer 💬
