@@ -58,7 +58,7 @@ export const ProjectCard: FC<Project> = ({
           size="sm"
           className="rounded-full transition-transform active:scale-90"
         >
-          <GithubIcon /> Code
+          <GithubIcon /> Source Code
         </Button>
       </a>
     </div>

@@ -7,6 +7,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  Input,
+  Label,
+  Textarea,
 } from "../ui";
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
@@ -34,7 +37,7 @@ export const AboutMe: FC<Props> = (props) => {
           <CardDescription>
             <h4>
               Hi!! My name is Williams Mata Rojas, frontEnd and backend
-              development 👨‍💻, i love coding and i really think it&apos;s the
+              development 👨‍💻, I love coding and I really think it&apos;s the
               best profession I could have chosen.
             </h4>
             <br />
@@ -58,13 +61,49 @@ export const AboutMe: FC<Props> = (props) => {
           <CardTitle>
             <h2 className="my-2 text-2xl">Contact Me:</h2>
           </CardTitle>
+          <CardDescription>
+            You can send me a message I will gladly answer 💬
+          </CardDescription>
 
           <form
             target="_blank"
             action="https://formsubmit.co/williams.rm99@gmail.com"
             method="POST"
+            className="mt-4 flex flex-col gap-2"
           >
-            <Button type="submit">Send</Button>
+            <div className="grid w-full max-w-sm items-center gap-1.5">
+              <Label htmlFor="email">Name:</Label>
+              <Input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                name="Name"
+                required
+              />
+            </div>
+
+            <div className="grid w-full max-w-sm items-center gap-1.5">
+              <Label htmlFor="email">Email:</Label>
+              <Input
+                required
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your email"
+              />
+            </div>
+
+            <div className="grid w-full gap-1.5">
+              <Label htmlFor="message">Your message</Label>
+              <Textarea
+                placeholder="Type your message here."
+                id="message"
+                name="message"
+              />
+            </div>
+            <Button className="w-full self-center" type="submit">
+              Send
+            </Button>
           </form>
         </CardContent>
       </Card>
