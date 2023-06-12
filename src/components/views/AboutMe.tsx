@@ -11,6 +11,7 @@ import {
   Label,
   Textarea,
 } from "../ui";
+import { SendIcon } from "lucide-react";
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
@@ -23,90 +24,98 @@ export const AboutMe: FC<Props> = (props) => {
         </h2>
       </div>
 
-      <Card className="mt-2">
-        <CardHeader className="flex flex-wrap">
+      <Card className="mt-2 flex flex-wrap">
+        <CardHeader className="w-full md:w-6/12 xl:w-4/12">
           <div className="aspect-square w-full rounded-lg bg-blue-700"></div>
         </CardHeader>
 
-        <CardContent>
-          <Badge className="bg-violet-500">StoryTime</Badge>
-          <CardTitle>
-            <h2 className="my-2 text-2xl">Who am i?... 🤔</h2>
-          </CardTitle>
+        <CardContent className="flex flex-col gap-4 md:w-6/12 md:pt-6 xl:w-8/12 xl:flex-row">
+          <div className="xl:w-6/12">
+            <Badge className="bg-violet-500">StoryTime</Badge>
+            <CardTitle>
+              <h2 className="mt-2 text-2xl">Who am i?... 🤔</h2>
+            </CardTitle>
 
-          <CardDescription>
-            <h4>
-              Hi!! My name is Williams Mata Rojas, frontEnd and backend
-              development 👨‍💻, I love coding and I really think it&apos;s the
-              best profession I could have chosen.
-            </h4>
-            <br />
-            <h5>
-              Ever since I can remember, I wanted to be a pilot 👨‍✈️, which I
-              studied for a while but couldn&apos;t pursue. I have always been
-              interested in the future and I am a technology lover, which led me
-              to programming 💻. I started by studying the basics of HTML, CSS,
-              and JavaScript and I love creating things with them.
-            </h5>
-            <br />
-            <h5>
-              I have worked on a few projects and then moved on to React, which
-              I currently handle very well with NextJS ⚛. I learned a lot about
-              backend development,starting with expressJS and then advancing to
-              NestJS. I enjoy writing TypeScript as typing is crucial in any
-              project.
-            </h5>
-          </CardDescription>
-        </CardContent>
+            <CardDescription>
+              <h4>
+                Hi!! My name is Williams Mata Rojas, frontEnd and backend
+                development 👨‍💻, I love coding and I really think it&apos;s the
+                best profession I could have chosen.
+              </h4>
+              <br />
+              <h5>
+                Ever since I can remember, I wanted to be a pilot 👨‍✈️, which I
+                studied for a while but couldn&apos;t pursue. I have always been
+                interested in the future and I am a technology lover, which led
+                me to programming 💻. I started by studying the basics of HTML,
+                CSS, and JavaScript and I love creating things with them.
+              </h5>
+              <br />
+              <h5>
+                I have worked on a few projects and then moved on to React,
+                which I currently handle very well with NextJS ⚛. I learned a
+                lot about backend development,starting with expressJS and then
+                advancing to NestJS. I enjoy writing TypeScript as typing is
+                crucial in any project.
+              </h5>
+            </CardDescription>
+          </div>
 
-        <CardContent>
-          <CardTitle>
-            <h2 className="text-2xl">Contact Me:</h2>
-          </CardTitle>
-          <CardDescription>
-            You can send me a message I will gladly answer 💬
-          </CardDescription>
+          <div className="xl:w-6/12">
+            <CardTitle>
+              <h2 className="text-2xl">Contact Me:</h2>
+            </CardTitle>
+            <CardDescription>
+              You can send me a message I will gladly answer 💬
+            </CardDescription>
 
-          <form
-            target="_blank"
-            action="https://formsubmit.co/williams.rm99@gmail.com"
-            method="POST"
-            className="mt-4 flex flex-col gap-2"
-          >
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Name:</Label>
-              <Input
-                type="text"
-                id="name"
-                placeholder="Your name"
-                name="Name"
-                required
-              />
-            </div>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/williams.rm99@gmail.com"
+              method="POST"
+              className="mt-4 flex w-full flex-col gap-2"
+            >
+              <div className="grid w-full max-w-sm items-center gap-1.5">
+                <Label htmlFor="email">Name:</Label>
+                <Input
+                  type="text"
+                  id="name"
+                  placeholder="Your name"
+                  name="Name"
+                  required
+                />
+              </div>
 
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Email:</Label>
-              <Input
-                required
-                type="email"
-                id="email"
-                name="Email"
-                placeholder="Your email"
-              />
-            </div>
+              <div className="grid w-full max-w-sm items-center gap-1.5">
+                <Label htmlFor="email">Email:</Label>
+                <Input
+                  required
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Your email"
+                />
+              </div>
 
-            <div className="grid w-full gap-1.5">
-              <Label htmlFor="message">Your message</Label>
-              <Textarea
-                placeholder="Type your message here."
-                id="message"
-                name="message"
-              />
-            </div>
-            <Button className="w-full self-center" type="submit">
-              Send
-            </Button>
-          </form>
+              <div className="flex items-end gap-2">
+                <div className="grid w-full gap-1.5">
+                  <Label htmlFor="message">Your message</Label>
+                  <Textarea
+                    placeholder="Type your message here."
+                    id="message"
+                    name="message"
+                  />
+                </div>
+                <Button
+                  className="aspect-square rounded-full p-2 transition-all active:scale-90 active:bg-violet-600"
+                  variant="ghost"
+                  type="submit"
+                >
+                  <SendIcon className="h-full w-full" />
+                </Button>
+              </div>
+            </form>
+          </div>
         </CardContent>
       </Card>
     </section>
