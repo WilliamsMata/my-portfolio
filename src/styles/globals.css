@@ -71,6 +71,9 @@
 }
 
 @layer base {
+  ::selection {
+    @apply bg-violet-600 text-white;
+  }
   * {
     @apply border-border;
   }
