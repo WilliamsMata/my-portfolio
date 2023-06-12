@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import { Main, Skills } from "~/components/views";
+import { Main, Projects, Skills } from "~/components/views";
 import { Layout } from "~/layouts";
 
 const Home: NextPage = () => {
@@ -11,6 +11,8 @@ const Home: NextPage = () => {
       />
 
       <Skills id="skills" className="container min-h-screen pt-20" />
+
+      <Projects id="projects" className="container min-h-screen pt-20" />
     </Layout>
   );
 };
