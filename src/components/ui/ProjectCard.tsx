@@ -27,7 +27,7 @@ export const ProjectCard: FC<Project> = ({
           src={imagePath}
           alt={title}
           fill
-          className="object-cover transition-transform hover:scale-105"
+          className="object-cover transition-transform hover:scale-105 active:scale-100"
         />
       </a>
     </div>

@@ -18,7 +18,7 @@ export const Navbar: FC = () => {
         </span>
 
         <div className="hidden items-center justify-center gap-2 md:flex lg:ml-56">
-          {["Skills", "Projects", "Contact Me"].map((opt) => (
+          {["Skills", "Projects", "About Me"].map((opt) => (
             <Button
               size="sm"
               className="text-md"
@@ -26,7 +26,7 @@ export const Navbar: FC = () => {
               key={opt}
               asChild
             >
-              <a href={`#${opt.toLowerCase()}`}>{opt}</a>
+              <a href={`#${opt.replace(" ", "-").toLowerCase()}`}>{opt}</a>
             </Button>
           ))}
         </div>

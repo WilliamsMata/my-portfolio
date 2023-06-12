@@ -10,7 +10,7 @@ export const Sidebar = () => {
       <SheetContent position="right" className="w-64">
         <div className="mt-2 flex h-full flex-col items-center justify-between pt-12">
           <div className="flex w-full flex-col gap-2">
-            {["Skills", "Projects", "Contact Me"].map((opt) => (
+            {["Skills", "Projects", "About Me"].map((opt) => (
               <Button
                 size="lg"
                 className="w-full text-xl"
@@ -19,7 +19,7 @@ export const Sidebar = () => {
                 onClick={() => setSidebarOpen(false)}
                 asChild
               >
-                <a href={`#${opt.toLowerCase()}`}>{opt}</a>
+                <a href={`#${opt.replace(" ", "-").toLowerCase()}`}>{opt}</a>
               </Button>
             ))}
           </div>
