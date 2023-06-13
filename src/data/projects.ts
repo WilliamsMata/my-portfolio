@@ -31,7 +31,7 @@ export const projects: Project[] = [
       },
       {
         title: "Prisma",
-        color: "#5867d6",
+        color: "#60a5fa",
       },
       {
         title: "NextAuth",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       },
       {
         title: "TanStack Query",
-        color: "#5867d6",
+        color: "#f87171",
       },
       {
         title: "Solid Router",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
       },
       {
         title: "Redux",
-        color: "#5b3d87",
+        color: "#a855f7",
       },
       {
         title: "ExpressJS",
