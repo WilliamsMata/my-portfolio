@@ -19,11 +19,11 @@ export const Main: FC<Props> = (props) => {
           Full Stack Developer
         </h1>
 
-        <h4 className="text-sm tracking-wide sm:text-base">
+        <h2 className="text-sm tracking-wide sm:text-base">
           As a skilled full-stack developer, I am dedicated to turning ideas
           into innovative web applications. Explore my latest projects,
           showcasing my expertise in React.js and web development.
-        </h4>
+        </h2>
 
         <div className="flex items-center justify-center gap-4 md:justify-start">
           <Button

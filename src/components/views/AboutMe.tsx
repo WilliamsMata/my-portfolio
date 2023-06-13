@@ -31,7 +31,9 @@ export const AboutMe: FC<Props> = (props) => {
 
         <CardContent className="flex flex-col gap-4 md:w-6/12 md:pt-6 xl:w-8/12 xl:flex-row">
           <div className="xl:w-6/12">
-            <Badge className="bg-violet-500">StoryTime</Badge>
+            <Badge className="bg-violet-700 text-white hover:bg-violet-700">
+              StoryTime
+            </Badge>
             <CardTitle className="mt-2 text-2xl">Who am i?... 🤔</CardTitle>
 
             <h3>
@@ -69,7 +71,7 @@ export const AboutMe: FC<Props> = (props) => {
               className="mt-4 flex w-full flex-col gap-2"
             >
               <div className="grid w-full max-w-sm items-center gap-1.5">
-                <Label htmlFor="email">Name:</Label>
+                <Label htmlFor="name">Name:</Label>
                 <Input
                   type="text"
                   id="name"

@@ -37,7 +37,7 @@ export const ProjectCard: FC<Project> = ({
       {projectTech.map((tech) => (
         <Badge
           key={tech.title}
-          className="hover:"
+          className="text-black"
           style={{ backgroundColor: tech.color }}
         >
           {tech.title}
