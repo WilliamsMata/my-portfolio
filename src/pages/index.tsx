@@ -1,8 +1,14 @@
 import { type NextPage } from "next";
 import { AboutMe, Main, Projects, Skills } from "~/components/views";
 import { Layout } from "~/layouts";
+import { useEffect } from "react";
+import { helloInConsole } from "~/helpers";
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    helloInConsole();
+  }, []);
+
   return (
     <Layout>
       <Main
