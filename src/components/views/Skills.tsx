@@ -1,4 +1,5 @@
 import type { FC, DetailedHTMLProps, HTMLAttributes } from "react";
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -10,7 +11,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "../ui";
-import Image from "next/image";
 import { skills } from "~/data";
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;

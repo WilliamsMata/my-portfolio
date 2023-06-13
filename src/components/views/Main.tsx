@@ -2,8 +2,7 @@ import type { FC, DetailedHTMLProps, HTMLAttributes } from "react";
 import Image from "next/image";
 import { BoxArrowUp } from "../icons";
 import { Button } from "../ui";
-
-import intjImage from "../../../public/images/intj.png";
+// import intjImage from "../../../public/images/intj.png";
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
@@ -53,12 +52,12 @@ export const Main: FC<Props> = (props) => {
         </div>
       </div>
 
-      <Image
+      {/* <Image
         src={intjImage}
         alt="intj-person"
         className="absolute bottom-4 right-8 -z-10 hidden w-52 sm:block"
         sizes="(max-width: 1200px) 60vw, 40vw"
-      />
+      /> */}
     </section>
   );
 };
