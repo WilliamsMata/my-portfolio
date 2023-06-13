@@ -24,12 +24,12 @@ export const Main: FC<Props> = (props) => {
         <h1 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-4xl font-semibold text-transparent sm:text-7xl md:text-5xl lg:text-6xl">
           Williams Mata R.
           <br />
-          Full Stack Developer
+          Web Developer
         </h1>
 
         <h2 className="text-sm tracking-wide sm:text-base">
-          As a skilled full-stack developer, I am dedicated to turning ideas
-          into innovative web applications. Explore my latest projects,
+          As a skilled frontend and backend developer, I am dedicated to turning
+          ideas into innovative web applications. Explore my latest projects,
           showcasing my expertise in React.js and web development.
         </h2>
 

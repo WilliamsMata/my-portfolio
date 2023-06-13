@@ -47,8 +47,8 @@ export const AboutMe: FC<Props> = (props) => {
 
             <h3>
               Hi!! My name is Williams Mata Rojas, frontEnd and backend
-              development 👨‍💻, I love coding and I really think it&apos;s the
-              best profession I could have chosen.
+              developer 👨‍💻, I love coding and I really think it&apos;s the best
+              profession I could have chosen.
             </h3>
 
             <CardDescription className="mt-2">
