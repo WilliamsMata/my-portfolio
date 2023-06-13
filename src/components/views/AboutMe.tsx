@@ -29,10 +29,10 @@ export const AboutMe: FC<Props> = (props) => {
         <CardHeader className="w-full md:w-6/12 xl:w-4/12">
           <div className="relative aspect-square w-full">
             <Image
-              src="/images/williams-2.png"
+              src="/images/browser_icon_4.svg"
               alt="this is me"
               fill
-              className="-scale-x-100 rounded-lg object-cover"
+              className="rounded-lg object-contain"
               sizes="(max-width: 768px) 80vw, (max-width: 1200px) 60vw, 40vw"
             />
           </div>
