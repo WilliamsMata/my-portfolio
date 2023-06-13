@@ -12,6 +12,7 @@ import {
   Textarea,
 } from "../ui";
 import { SendIcon } from "lucide-react";
+import Image from "next/image";
 
 type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
@@ -26,7 +27,15 @@ export const AboutMe: FC<Props> = (props) => {
 
       <Card className="mt-2 flex flex-wrap">
         <CardHeader className="w-full md:w-6/12 xl:w-4/12">
-          <div className="aspect-square w-full rounded-lg bg-blue-700"></div>
+          <div className="relative aspect-square w-full">
+            <Image
+              src="/images/williams-2.png"
+              alt="this is me"
+              fill
+              className="-scale-x-100 rounded-lg object-cover"
+              sizes="(max-width: 768px) 80vw, (max-width: 1200px) 60vw, 40vw"
+            />
+          </div>
         </CardHeader>
 
         <CardContent className="flex flex-col gap-4 md:w-6/12 md:pt-6 xl:w-8/12 xl:flex-row">

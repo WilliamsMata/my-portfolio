@@ -16,7 +16,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Williams Mata Portfolio</title>
+        <title>Williams Mata</title>
         <meta
           name="description"
           content="Welcome to the web development portfolio of Williams Mata. I am a skilled frontend and backend developer with experience creating modern, dynamic websites. Explore my portfolio to see some of the projects I have worked on and get in touch if you are interested in collaborating on a project together."

@@ -13,7 +13,7 @@ export const Projects: FC<Props> = (props) => {
         </h2>
       </div>
 
-      <div className="mt-4 flex flex-wrap justify-center">
+      <div className="mt-4 flex flex-wrap">
         {projects.map((project) => (
           <div
             key={project.title}

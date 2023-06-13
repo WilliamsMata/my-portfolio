@@ -10,7 +10,15 @@ type Props = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 export const Main: FC<Props> = (props) => {
   return (
     <section {...props}>
-      <div className="aspect-square w-full rounded-3xl bg-blue-900 sm:hidden md:block md:w-6/12"></div>
+      <div className="relative aspect-square w-full rounded-3xl sm:hidden md:block md:w-6/12">
+        <Image
+          src="/images/coding-person.png"
+          alt="coding person"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
+          priority
+        />
+      </div>
 
       <div className="flex flex-col justify-center gap-4 text-center md:w-6/12 md:text-start">
         <h1 className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-4xl font-semibold text-transparent sm:text-7xl md:text-5xl lg:text-6xl">
