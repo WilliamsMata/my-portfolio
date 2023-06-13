@@ -8,6 +8,7 @@ interface ContextProps {
   setSidebarOpen: (newValue: boolean) => void;
   toggleDarkMode: () => void;
   setMode: (newMode: boolean) => void;
+  setSystemMode: () => void;
 }
 
 export const UIContext = createContext({} as ContextProps);

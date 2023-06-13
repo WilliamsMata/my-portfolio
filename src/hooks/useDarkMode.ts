@@ -8,6 +8,7 @@ type UseDarkModeReturn = {
   darkMode: boolean | undefined;
   switchMode: () => void;
   setMode: (newMode: boolean) => void;
+  setSystemMode: () => void;
 };
 
 export const useDarkMode = (
@@ -48,9 +49,14 @@ export const useDarkMode = (
     setDarkMode(newMode);
   };
 
+  const setSystemMode = () => {
+    setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  };
+
   return {
     darkMode,
     switchMode,
     setMode,
+    setSystemMode,
   };
 };

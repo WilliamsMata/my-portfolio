@@ -4,7 +4,7 @@ import { UIContext } from "~/context/ui";
 import { WMIcon } from "./icons";
 
 export const Navbar: FC = () => {
-  const { toggleSidebar, setMode } = useContext(UIContext);
+  const { toggleSidebar, setMode, setSystemMode } = useContext(UIContext);
 
   const onNameClick = () => {
     document.documentElement.scrollTo({ top: 0 });
@@ -38,11 +38,13 @@ export const Navbar: FC = () => {
 
           <SelectDarkMode
             onModeChange={setMode}
+            onSystemClick={setSystemMode}
             className="w-10 p-2 md:hidden"
           />
 
           <SelectDarkMode
             onModeChange={setMode}
+            onSystemClick={setSystemMode}
             className="hidden w-10 p-2 md:block"
             align="end"
           />

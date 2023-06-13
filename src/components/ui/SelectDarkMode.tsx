@@ -8,15 +8,17 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from ".";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { Laptop, MoonIcon, SunIcon } from "lucide-react";
 
 interface Props extends DropdownMenuTriggerProps {
   onModeChange: (newValue: boolean) => void;
+  onSystemClick?: () => void;
   align?: "center" | "start" | "end";
 }
 
 export const SelectDarkMode: React.FC<Props> = ({
   onModeChange,
+  onSystemClick,
   align,
   ...props
 }) => {
@@ -36,6 +38,9 @@ export const SelectDarkMode: React.FC<Props> = ({
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => onModeChange(true)}>
           <MoonIcon className="mr-2 h-4 w-4" /> Dark
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => !!onSystemClick && onSystemClick()}>
+          <Laptop className="mr-2 h-4 w-4" /> System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
