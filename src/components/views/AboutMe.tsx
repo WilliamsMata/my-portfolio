@@ -32,39 +32,32 @@ export const AboutMe: FC<Props> = (props) => {
         <CardContent className="flex flex-col gap-4 md:w-6/12 md:pt-6 xl:w-8/12 xl:flex-row">
           <div className="xl:w-6/12">
             <Badge className="bg-violet-500">StoryTime</Badge>
-            <CardTitle>
-              <h2 className="mt-2 text-2xl">Who am i?... 🤔</h2>
-            </CardTitle>
+            <CardTitle className="mt-2 text-2xl">Who am i?... 🤔</CardTitle>
 
-            <CardDescription>
-              <h4>
-                Hi!! My name is Williams Mata Rojas, frontEnd and backend
-                development 👨‍💻, I love coding and I really think it&apos;s the
-                best profession I could have chosen.
-              </h4>
-              <br />
-              <h5>
-                Ever since I can remember, I wanted to be a pilot 👨‍✈️, which I
-                studied for a while but couldn&apos;t pursue. I have always been
-                interested in the future and I am a technology lover, which led
-                me to programming 💻. I started by studying the basics of HTML,
-                CSS, and JavaScript and I love creating things with them.
-              </h5>
-              <br />
-              <h5>
-                I have worked on a few projects and then moved on to React,
-                which I currently handle very well with NextJS ⚛. I learned a
-                lot about backend development,starting with expressJS and then
-                advancing to NestJS. I enjoy writing TypeScript as typing is
-                crucial in any project.
-              </h5>
+            <h3>
+              Hi!! My name is Williams Mata Rojas, frontEnd and backend
+              development 👨‍💻, I love coding and I really think it&apos;s the
+              best profession I could have chosen.
+            </h3>
+
+            <CardDescription className="mt-2">
+              Ever since I can remember, I wanted to be a pilot 👨‍✈️, which I
+              studied for a while but couldn&apos;t pursue. I have always been
+              interested in the future and I am a technology lover, which led me
+              to programming 💻. I started by studying the basics of HTML, CSS,
+              and JavaScript and I love creating things with them.
+            </CardDescription>
+            <CardDescription className="mt-2">
+              I have worked on a few projects and then moved on to React, which
+              I currently handle very well with NextJS ⚛. I learned a lot about
+              backend development,starting with expressJS and then advancing to
+              NestJS. I enjoy writing TypeScript as typing is crucial in any
+              project.
             </CardDescription>
           </div>
 
-          <div className="xl:w-6/12">
-            <CardTitle>
-              <h2 className="text-2xl">Contact Me:</h2>
-            </CardTitle>
+          <div>
+            <CardTitle className="text-2xl">Contact Me:</CardTitle>
             <CardDescription>
               You can send me a message I will gladly answer 💬
             </CardDescription>
@@ -104,6 +97,7 @@ export const AboutMe: FC<Props> = (props) => {
                     placeholder="Type your message here."
                     id="message"
                     name="message"
+                    className="resize-y overflow-auto"
                   />
                 </div>
                 <Button

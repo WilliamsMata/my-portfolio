@@ -21,16 +21,17 @@ export const ProjectCard: FC<Project> = ({
   projectTech,
 }) => (
   <Card className="relative w-full overflow-hidden rounded-lg sm:h-[calc(100vh-10rem)]">
-    <div className="relative aspect-video w-full">
-      <a href={projectUrl} target="_blank">
+    <a href={projectUrl} target="_blank">
+      <div className="relative aspect-video w-full">
         <Image
           src={imagePath}
           alt={title}
           fill
-          className="object-cover transition-transform hover:scale-105 active:scale-100"
+          className="h-full object-cover transition-transform hover:scale-105 active:scale-100"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
         />
-      </a>
-    </div>
+      </div>
+    </a>
 
     <div className="flex flex-wrap justify-center gap-2 px-6 pt-4">
       {projectTech.map((tech) => (
