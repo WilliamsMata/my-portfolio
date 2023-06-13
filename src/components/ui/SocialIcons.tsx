@@ -55,6 +55,7 @@ export const SocialIcons: FC<Props> = ({ className }) => {
           href={social.url}
           target="_blank"
           className="transition-transform hover:-translate-y-1"
+          title={`Go to my ${social.title}`}
         >
           {social.icon}
         </a>

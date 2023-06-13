@@ -25,7 +25,7 @@ export const SelectDarkMode: React.FC<Props> = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild {...props}>
-        <Button variant="ghost">
+        <Button variant="ghost" aria-label="Select theme">
           <MoonIcon className="hidden h-auto w-full transition-all dark:flex" />
           <SunIcon className="flex h-auto w-full transition-all dark:hidden" />
         </Button>

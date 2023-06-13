@@ -25,6 +25,7 @@ export const Navbar: FC = () => {
               variant="ghost"
               key={opt}
               asChild
+              aria-label={opt}
             >
               <a href={`#${opt.replace(" ", "-").toLowerCase()}`}>{opt}</a>
             </Button>
@@ -56,6 +57,7 @@ export const Navbar: FC = () => {
             variant="ghost"
             className="ml-0 md:hidden"
             onClick={toggleSidebar}
+            aria-label="Open menu"
           >
             <span className="font-bold">Menu</span>
           </Button>

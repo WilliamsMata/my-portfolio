@@ -58,6 +58,7 @@ export const ProjectCard: FC<Project> = ({
         <Button
           size="sm"
           className="rounded-full transition-transform active:scale-90"
+          type="button"
         >
           <GithubIcon /> Source Code
         </Button>

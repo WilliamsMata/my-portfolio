@@ -29,6 +29,7 @@ export const Main: FC<Props> = (props) => {
           <Button
             className="flex items-center tracking-wide transition-transform active:scale-90 sm:text-base"
             size="lg"
+            type="button"
           >
             Resume <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
           </Button>

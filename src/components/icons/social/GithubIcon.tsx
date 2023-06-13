@@ -10,7 +10,6 @@ export const GithubIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <title>Github-color</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
       <g

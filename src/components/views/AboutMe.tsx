@@ -104,6 +104,7 @@ export const AboutMe: FC<Props> = (props) => {
                   className="aspect-square rounded-full p-2 transition-all active:scale-90 active:bg-violet-600"
                   variant="ghost"
                   type="submit"
+                  title="Send message"
                 >
                   <SendIcon className="h-full w-full" />
                 </Button>
