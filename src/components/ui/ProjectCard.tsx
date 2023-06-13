@@ -20,7 +20,7 @@ export const ProjectCard: FC<Project> = ({
   projectUrl,
   projectTech,
 }) => (
-  <Card className="relative w-full overflow-hidden rounded-lg sm:h-[calc(100vh-10rem)]">
+  <Card className="relative w-full overflow-hidden rounded-lg sm:h-[38rem]">
     <a href={projectUrl} target="_blank">
       <div className="relative aspect-video w-full">
         <Image
