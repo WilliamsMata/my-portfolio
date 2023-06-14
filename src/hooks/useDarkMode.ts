@@ -51,6 +51,7 @@ export const useDarkMode = (
 
   const setSystemMode = () => {
     setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    localStorage.setItem("theme", "system");
   };
 
   return {
