@@ -87,7 +87,7 @@ export const AboutMe: FC<Props> = (props) => {
                   placeholder="Your name"
                   name="Name"
                   required
-                  className="focus-visible:ring-purple-700"
+                  className="focus-visible:ring-violet-700"
                 />
               </div>
 
@@ -99,7 +99,7 @@ export const AboutMe: FC<Props> = (props) => {
                   id="email"
                   name="Email"
                   placeholder="Your email"
-                  className="focus-visible:ring-purple-700"
+                  className="focus-visible:ring-violet-700"
                 />
               </div>
 
@@ -110,11 +110,11 @@ export const AboutMe: FC<Props> = (props) => {
                     placeholder="Type your message here."
                     id="message"
                     name="message"
-                    className="resize-y overflow-auto focus-visible:ring-purple-700"
+                    className="resize-y overflow-auto focus-visible:ring-violet-700"
                   />
                 </div>
                 <Button
-                  className="aspect-square rounded-full p-2 transition-all focus-visible:ring-purple-600 active:scale-90 active:bg-violet-600"
+                  className="aspect-square rounded-full p-2 transition-all focus-visible:ring-violet-700 active:scale-90 active:bg-violet-600"
                   variant="ghost"
                   type="submit"
                   title="Send message"
