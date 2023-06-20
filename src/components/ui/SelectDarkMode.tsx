@@ -30,6 +30,7 @@ export const SelectDarkMode: React.FC<Props> = ({
           <SunIcon className="flex h-auto w-full transition-all dark:hidden" />
         </Button>
       </DropdownMenuTrigger>
+
       <DropdownMenuContent align={align || "center"}>
         <DropdownMenuLabel>Theme</DropdownMenuLabel>
         <DropdownMenuSeparator />
