@@ -7,7 +7,7 @@ export const Sidebar = () => {
 
   return (
     <Sheet open={isSidebarOpen} onOpenChange={setSidebarOpen}>
-      <SheetContent position="right" className="w-64">
+      <SheetContent side="right" className="w-64">
         <div className="mt-2 flex h-full flex-col items-center justify-between pt-12">
           <div className="flex w-full flex-col gap-2">
             {["Skills", "Projects", "About Me"].map((opt) => (
