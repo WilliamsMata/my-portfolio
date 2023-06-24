@@ -24,7 +24,7 @@ export const SkillDialog: FC<PropsWithChildren<SkillData>> = ({
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
 
-      <DialogContent className="top-2/4 -translate-y-1/2 ring-2 ring-violet-700 ring-offset-4 ring-offset-background sm:top-auto sm:mt-auto sm:max-w-[425px] sm:translate-y-0">
+      <DialogContent className="sm:max-w-[425px]">
         <div className="flex flex-col items-center justify-center gap-4">
           <div
             className={`relative aspect-square w-6/12 ${
