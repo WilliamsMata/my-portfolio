@@ -1,8 +1,8 @@
 import { Roboto_Mono } from "next/font/google";
 import { type AppType } from "next/dist/shared/lib/utils";
-import "~/styles/globals.css";
-import { UIProvider } from "~/context/ui";
 import { ThemeProvider } from "next-themes";
+import { UIProvider } from "~/context/ui";
+import "~/styles/globals.css";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],

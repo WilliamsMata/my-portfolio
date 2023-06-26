@@ -34,13 +34,15 @@ export const Main: FC<Props> = (props) => {
         </h2>
 
         <div className="flex items-center justify-center gap-4 md:justify-start">
-          <Button
-            className="flex items-center tracking-wide transition-transform active:scale-90 sm:text-base"
-            size="lg"
-            type="button"
-          >
-            Resume <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
-          </Button>
+          <a href="/files/resume.pdf" target="_blank">
+            <Button
+              className="flex items-center tracking-wide transition-transform active:scale-90 sm:text-base"
+              size="lg"
+              type="button"
+            >
+              Resume <BoxArrowUp className="mb-1 ml-2 h-4 w-4" />
+            </Button>
+          </a>
 
           <a
             href="mailto:wm.dev.ts@gmail.com"
