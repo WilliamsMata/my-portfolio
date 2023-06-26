@@ -1,5 +1,5 @@
-import type { PropsWithChildren, FC } from "react";
 import Head from "next/head";
+import type { PropsWithChildren, FC } from "react";
 import { Footer, Navbar, Sidebar } from "~/components";
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
@@ -16,17 +16,6 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         <meta
           property="og:image"
           content="https://i.ibb.co/z6D9tGS/my-logo.png"
-        />
-
-        <link
-          rel="icon"
-          media="(prefers-color-scheme: dark)"
-          href="/icons/wm-dark.svg"
-        />
-        <link
-          rel="icon"
-          media="(prefers-color-scheme: light)"
-          href="/icons/wm-light.svg"
         />
       </Head>
 
