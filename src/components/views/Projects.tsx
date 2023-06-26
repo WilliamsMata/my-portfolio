@@ -17,7 +17,7 @@ export const Projects: FC<Props> = (props) => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="p-2 sm:w-6/12 lg:w-4/12 xl:w-3/12"
+            className="pb-4 sm:w-6/12 sm:p-2 lg:w-4/12 xl:w-3/12 xl:first:pl-0 xl:last:pr-0"
           >
             <ProjectCard {...project} />
           </div>
