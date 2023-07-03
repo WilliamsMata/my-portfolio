@@ -71,6 +71,17 @@
 }
 
 @layer base {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5b21b6;
+    border-radius: 4px;
+  }
+
   ::selection {
     @apply bg-violet-600 text-white;
   }

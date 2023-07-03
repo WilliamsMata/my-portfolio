@@ -21,6 +21,16 @@ const mySocialsMedia: SocialMedia[] = [
     icon: <GithubIcon className="h-8 w-8" />,
   },
   {
+    title: "linkedin",
+    url: "https://www.linkedin.com/in/williams-mata",
+    icon: <LinkedinIcon className="h-8 w-8" />,
+  },
+  {
+    title: "telegram",
+    url: "https://t.me/williams_rm",
+    icon: <TelegramIcon className="h-8 w-8" />,
+  },
+  {
     title: "instagram",
     url: "https://www.instagram.com/williams_rm/",
     icon: <InstagramIcon className="h-8 w-8" />,
@@ -29,16 +39,6 @@ const mySocialsMedia: SocialMedia[] = [
     title: "twitter",
     url: "https://twitter.com/williamsmata99",
     icon: <TwitterIcon className="h-8 w-8" />,
-  },
-  {
-    title: "telegram",
-    url: "https://t.me/williams_rm",
-    icon: <TelegramIcon className="h-8 w-8" />,
-  },
-  {
-    title: "linkedin",
-    url: "https://www.linkedin.com/in/williams-mata-rojas-b39a56245/",
-    icon: <LinkedinIcon className="h-8 w-8" />,
   },
 ];
 
