@@ -84,7 +84,7 @@ export const AboutMe: FC<Props> = (props) => {
                 <Input
                   type="text"
                   id="name"
-                  placeholder="Your name"
+                  placeholder="Your name."
                   name="Name"
                   required
                   className="focus-visible:ring-violet-700"
@@ -98,14 +98,14 @@ export const AboutMe: FC<Props> = (props) => {
                   type="email"
                   id="email"
                   name="Email"
-                  placeholder="Your email"
+                  placeholder="Your email."
                   className="focus-visible:ring-violet-700"
                 />
               </div>
 
               <div className="flex items-end gap-2">
                 <div className="grid w-full gap-1.5">
-                  <Label htmlFor="message">Your message</Label>
+                  <Label htmlFor="message">Your message:</Label>
                   <Textarea
                     placeholder="Type your message here."
                     id="message"
