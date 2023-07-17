@@ -14,8 +14,7 @@ export const Main: FC<Props> = (props) => {
           src="/images/coding-person.png"
           alt="coding person"
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 40vw"
-          className="object-cover"
+          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 40vw"
           priority
         />
       </div>

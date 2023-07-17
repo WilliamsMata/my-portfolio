@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from ".";
-import { Laptop, Moon, MoonIcon, Sun, SunIcon } from "lucide-react";
+import { Laptop, Moon, Sun, SunIcon } from "lucide-react";
 
 interface Props extends DropdownMenuTriggerProps {
   align?: "center" | "start" | "end";
@@ -35,7 +35,7 @@ export const SelectDarkMode: React.FC<Props> = ({ align, ...props }) => {
           <SunIcon className="mr-2 h-4 w-4" /> Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <MoonIcon className="mr-2 h-4 w-4" /> Dark
+          <Moon className="mr-2 h-4 w-4" /> Dark
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           <Laptop className="mr-2 h-4 w-4" /> System
