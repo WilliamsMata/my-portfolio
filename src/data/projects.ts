@@ -79,7 +79,7 @@ export const projects: Project[] = [
       "This calendar application allows users to create and manage events easily. Users can sign in to the app and add events to their calendar and set reminders. The app provides a variety of views, including daily, weekly, and monthly, making it easy to view upcoming events at a glance.",
     githubUrl: "https://github.com/WilliamsMata/calendar-app",
     imagePath: "/projects/calendario.png",
-    projectUrl: "https://calendario.up.railway.app/",
+    projectUrl: "https://calendario.cyclic.cloud",
     projectTech: [
       {
         title: "ReactJS",
