@@ -160,7 +160,7 @@ export const skills: Skill[] = [
         iconPath: "/icons/mongo.svg",
         url: "https://www.mongodb.com/",
         description:
-          "PostgreSQL, also known as Postgres, is a powerful, open-source object-relational database system that uses and extends the SQL language. It offers many features that safely store and scale complex data workloads. PostgreSQL is known for its robust architecture, reliability, and data integrity. It's ACID-compliant and has powerful add-ons such as the popular PostGIS geospatial database extender. PostgreSQL is used as a primary database for many web applications as well as mobile and analytics applications. It's highly extensible, allowing users to define their own data types, index types, functional languages, and more.",
+          "MongoDB is a popular NoSQL database that allows developers to store and manage unstructured data in a flexible and scalable way. It uses a document-based data model, which means that data is stored in JSON-like documents that can have different structures and fields. MongoDB provides a set of features and tools for managing data, including CRUD (Create, Read, Update, Delete) operations, aggregation, indexing, and querying. It also supports various advanced features such as replication, sharding, and scaling.",
       },
       {
         title: "MySQL",
@@ -189,7 +189,7 @@ export const skills: Skill[] = [
         iconPath: "/icons/postgresql.svg",
         url: "https://www.postgresql.org/",
         description:
-          "NextAuth.js is an open-source authentication library for Next.js applications. It provides a simple and flexible way to implement various authentication providers, such as Google, Facebook, and GitHub, as well as custom authentication strategies. NextAuth.js allows developers to easily add authentication to their Next.js applications without having to manage the complexities of authentication protocols and security concerns. It also provides a set of features such as session management, CSRF protection, and JWT signing.",
+          "PostgreSQL, also known as Postgres, is a powerful, open-source object-relational database system that uses and extends the SQL language. It offers many features that safely store and scale complex data workloads. PostgreSQL is known for its robust architecture, reliability, and data integrity. It's ACID-compliant and has powerful add-ons such as the popular PostGIS geospatial database extender. PostgreSQL is used as a primary database for many web applications as well as mobile and analytics applications. It's highly extensible, allowing users to define their own data types, index types, functional languages, and more.",
       },
       {
         title: "Prisma",
