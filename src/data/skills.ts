@@ -149,13 +149,6 @@ export const skills: Skill[] = [
           "Git is a popular version control system that helps developers to manage changes to their codebase over time. It allows developers to track changes to their code, collaborate with other developers, and revert changes when necessary. Git provides a set of commands and tools for creating, branching, merging, and managing code repositories, both locally and remotely. It also provides a powerful set of features for resolving conflicts and managing code reviews. Git is widely used in the software development community and is an essential tool for managing codebases of all sizes.",
       },
       {
-        title: "Graphql",
-        iconPath: "/icons/graphql.svg",
-        url: "https://graphql.org/",
-        description:
-          "GraphQL is a query language for APIs that was developed by Facebook. It allows clients to request specific data from a server, rather than receiving a full payload of data. This makes it more efficient and flexible than traditional REST APIs. With GraphQL, clients can specify the exact data they need, and the server will respond with only the requested data. This reduces the amount of data transferred over the network and can improve application performance. GraphQL also provides a type system for APIs, which makes it easier to understand and document the data that is available.",
-      },
-      {
         title: "Jest",
         iconPath: "/icons/jest.svg",
         url: "https://jestjs.io/",
@@ -163,18 +156,11 @@ export const skills: Skill[] = [
           "Jest is a popular JavaScript testing framework used to test JavaScript code, particularly for React applications. It is developed by Facebook and provides a powerful set of features for testing code, including a test runner, assertion library, and mocking capabilities. Jest allows developers to write tests in a simple and intuitive way, using a combination of test suites, test cases, and assertions. It also provides tools for code coverage analysis, parallel testing, and snapshot testing.",
       },
       {
-        title: "JWT",
-        iconPath: "/icons/jwt.svg",
-        url: "https://jwt.io/",
-        description:
-          "JWT (JSON Web Token) is an open standard for securely transmitting information between parties as a JSON object. It is commonly used for authentication and authorization purposes in web applications. JWTs consist of three parts - a header, a payload, and a signature. The header and payload are Base64Url encoded JSON objects, while the signature is used to verify the authenticity of the token. JWTs are used to securely transmit information such as user details, permissions, and access tokens between a client and a server.",
-      },
-      {
         title: "MongoDB",
         iconPath: "/icons/mongo.svg",
         url: "https://www.mongodb.com/",
         description:
-          "MongoDB is a popular NoSQL database that allows developers to store and manage unstructured data in a flexible and scalable way. It uses a document-based data model, which means that data is stored in JSON-like documents that can have different structures and fields. MongoDB provides a set of features and tools for managing data, including CRUD (Create, Read, Update, Delete) operations, aggregation, indexing, and querying. It also supports various advanced features such as replication, sharding, and scaling.",
+          "PostgreSQL, also known as Postgres, is a powerful, open-source object-relational database system that uses and extends the SQL language. It offers many features that safely store and scale complex data workloads. PostgreSQL is known for its robust architecture, reliability, and data integrity. It's ACID-compliant and has powerful add-ons such as the popular PostGIS geospatial database extender. PostgreSQL is used as a primary database for many web applications as well as mobile and analytics applications. It's highly extensible, allowing users to define their own data types, index types, functional languages, and more.",
       },
       {
         title: "MySQL",
@@ -188,6 +174,20 @@ export const skills: Skill[] = [
         title: "NextAuth",
         iconPath: "/icons/next-auth.png",
         url: "https://next-auth.js.org/",
+        description:
+          "NextAuth.js is an open-source authentication library for Next.js applications. It provides a simple and flexible way to implement various authentication providers, such as Google, Facebook, and GitHub, as well as custom authentication strategies. NextAuth.js allows developers to easily add authentication to their Next.js applications without having to manage the complexities of authentication protocols and security concerns. It also provides a set of features such as session management, CSRF protection, and JWT signing.",
+      },
+      {
+        title: "Playwright",
+        iconPath: "/icons/playwright.svg",
+        url: "https://playwright.dev/",
+        description:
+          "Playwright is a Node.js library to automate Chromium, Firefox, and WebKit with a single API. It enables cross-browser web automation that is ever-green, capable, reliable, and fast. Playwright is used for web testing, web scraping, and automating browser tasks. It supports multiple languages, including JavaScript, TypeScript, Python, C#, and Java. Playwright runs headless by default but can be configured to run full (non-headless) browsers. It can generate screenshots and PDFs of pages and has robust support for user interactions, including clicks, types, and scrolls.",
+      },
+      {
+        title: "PostgreSQL",
+        iconPath: "/icons/postgresql.svg",
+        url: "https://www.postgresql.org/",
         description:
           "NextAuth.js is an open-source authentication library for Next.js applications. It provides a simple and flexible way to implement various authentication providers, such as Google, Facebook, and GitHub, as well as custom authentication strategies. NextAuth.js allows developers to easily add authentication to their Next.js applications without having to manage the complexities of authentication protocols and security concerns. It also provides a set of features such as session management, CSRF protection, and JWT signing.",
       },
@@ -219,6 +219,14 @@ export const skills: Skill[] = [
         url: "https://redux.js.org/",
         description:
           "Redux is a popular JavaScript library used for managing the state of an application. It provides a predictable and centralized way of managing application state, which makes it easier to reason about the behavior of an application and debug issues. In Redux, the entire state of an application is stored in a single object called the store, which can only be modified by dispatching actions. These actions are plain JavaScript objects that describe what happened in the application. Reducers are pure functions that take the current state and an action, and return the new state of the application. Redux also provides a set of tools for debugging, time-traveling, and middleware.",
+      },
+      {
+        title: "Socket.io",
+        iconPath: "/icons/socketio.svg",
+        url: "https://socket.io/",
+        description:
+          "Socket.IO is a JavaScript library that enables real-time, bidirectional, and event-based communication between a client and a server. It consists of two parts: a client-side library that runs in the browser, and a server-side library for Node.js. Both components have a nearly identical API. Socket.IO primarily uses the WebSocket protocol with HTTP long-polling as a fallback option. It provides features such as broadcasting to multiple sockets, storing data associated with each client, and asynchronous I/O. Socket.IO is used in various applications such as chat and messaging applications, collaboration tools, real-time dashboards, and multiplayer games.",
+        needInvertColor: true,
       },
       {
         title: "TanStack Query",
