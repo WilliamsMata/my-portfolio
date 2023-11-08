@@ -46,24 +46,33 @@ export const AboutMe: FC<Props> = (props) => {
             <CardTitle className="mt-2 text-2xl">Who am i?... 🤔</CardTitle>
 
             <h3>
-              Hi!! My name is Williams Mata Rojas, frontEnd and backend
-              developer 👨‍💻, I love coding and I really think it&apos;s the best
-              profession I could have chosen.
+              Hi! I&apos;m Williams Mata Rojas, full stack developer passionate
+              about technology and programming 👨‍💻. I firmly believe that
+              programming is the best profession I could have chosen, and
+              it&apos;s a pleasure to be able to use my skills to create things
+              that bring value to the world.
             </h3>
 
             <CardDescription className="mt-2">
-              Ever since I can remember, I wanted to be a pilot 👨‍✈️, which I
-              studied for a while but couldn&apos;t pursue. I have always been
-              interested in the future and I am a technology lover, which led me
-              to programming 💻. I started by studying the basics of HTML, CSS,
-              and JavaScript and I love creating things with them.
+              Since I was a kid, I dreamed of being a pilot 👨‍✈️ and although I
+              studied that career for a while, life took me down a different
+              path. My fascination with technology and the future led me towards
+              the fascinating world of programming 💻. I started my journey
+              learning the basics of HTML, CSS and JavaScript, and since then,
+              I&apos;ve enjoyed every moment I spend creating with them.
             </CardDescription>
             <CardDescription className="mt-2">
-              I have worked on a few projects and then moved on to React, which
-              I currently handle very well with NextJS ⚛. I learned a lot about
-              backend development,starting with expressJS and then advancing to
-              NestJS. I enjoy writing TypeScript as typing is crucial in any
-              project.
+              Throughout my career, I&apos;ve worked on various projects, which
+              has allowed me to gain extensive experience and constantly improve
+              my skills. My path led me to React and NextJS ⚛, tools that I
+              currently feel very comfortable with and that allow me to develop
+              high quality applications.
+            </CardDescription>
+            <CardDescription className="mt-2">
+              In addition, I&apos;ve had the opportunity to learn a lot about
+              backend development, starting with ExpressJS and moving towards
+              NestJS. I enjoy writing in TypeScript, as I consider typing to be
+              crucial to keep a project organized and efficient.
             </CardDescription>
           </div>
 
