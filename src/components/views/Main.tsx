@@ -44,7 +44,7 @@ export const Main: FC<Props> = (props) => {
           </a>
 
           <a
-            href="mailto:wm.dev.ts@gmail.com"
+            href="mailto:willams.rm99@gmail.com"
             target="_blank"
             className="tracking-wide underline underline-offset-4"
           >
