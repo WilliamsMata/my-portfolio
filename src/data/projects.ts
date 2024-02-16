@@ -109,7 +109,7 @@ export const projects: Project[] = [
       "This is my first project, the classic rock paper scissors game. The user plays against the computer which randomly chooses an option. The project is an advanced difficulty FrontEnd Mentor challenge.",
     githubUrl: "https://github.com/WilliamsMata/rockpaperscissors",
     imagePath: "/projects/rock-paper-scissors.png",
-    projectUrl: "https://williamsmata.github.io/rockpaperscissors/",
+    projectUrl: "https://rockpaperscissors.williamsmata.com/",
     projectTech: [
       {
         title: "HTML",
