@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "This weather application provides real-time weather information for a user's current location or any specified location. The app displays current temperature, chance of rain, wind speed, and other relevant weather data. Users can also view hourly and daily forecasts.",
     githubUrl: "https://github.com/WilliamsMata/weather-app",
     imagePath: "/projects/weather-app.png",
-    projectUrl: "https://my-weather-app-wm.netlify.app/",
+    projectUrl: "https://weatherapp.williamsmata.com",
     projectTech: [
       {
         title: "SolidJS",
