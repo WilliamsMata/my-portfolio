@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "This ecommerce project is a replica of Tesla's online store, but focused on selling clothing for men, women, and children. In addition to apparel, the website could offer accessories such as caps, backpacks, and more. The website would have administrative panels to manage inventory, sales, and shipping of products. Customers could make purchases online and use PayPal for secure and reliable payments.",
     githubUrl: "https://github.com/WilliamsMata/ecommerce",
     imagePath: "/projects/teslo-shop.png",
-    projectUrl: "https://ecommerce-williamsmata.vercel.app/",
+    projectUrl: "https://ecommerce.williamsmata.com/",
     projectTech: [
       {
         title: "NextJS",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
       "This calendar application allows users to create and manage events easily. Users can sign in to the app and add events to their calendar and set reminders. The app provides a variety of views, including daily, weekly, and monthly, making it easy to view upcoming events at a glance.",
     githubUrl: "https://github.com/WilliamsMata/calendar-app",
     imagePath: "/projects/calendario.png",
-    projectUrl: "https://calendario.cyclic.cloud",
+    projectUrl: "https://calendario.williamsmata.com/",
     projectTech: [
       {
         title: "ReactJS",
